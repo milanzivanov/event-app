@@ -1,0 +1,40 @@
+{
+  "name": "nextjs-demo-2026",
+  "description": "Next.js Demo Project",
+  "commands": {
+    "dev": {
+      "command": "npm run dev",
+      "description": "Start Next.js development server"
+    },
+    "build": {
+      "command": "npm run build",
+      "description": "Build Next.js production bundle"
+    },
+    "start": {
+      "command": "npm run start",
+      "description": "Start Next.js production server"
+    },
+    "lint": {
+      "command": "npm run lint",
+      "description": "Run ESLint"
+    },
+    "test": {
+      "command": "npm test",
+      "description": "Run tests"
+    },
+    "type-check": {
+      "command": "npx tsc --noEmit",
+      "description": "Run TypeScript type checking"
+    }
+  },
+  "workflows": {
+    "setup": {
+      "description": "Install dependencies",
+      "steps": ["npm install"]
+    },
+    "validate": {
+      "description": "Run linting and type checking",
+      "steps": ["npm run lint", "npx tsc --noEmit"]
+    }
+  }
+}

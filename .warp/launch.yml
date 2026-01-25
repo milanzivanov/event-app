@@ -1,0 +1,14 @@
+name: Next.js Demo
+description: Next.js development environment
+
+on_init:
+  - echo "Welcome to Next.js Demo Project!"
+  - echo "Run 'npm run dev' to start the development server"
+
+aliases:
+  dev: npm run dev
+  build: npm run build
+  lint: npm run lint
+  
+environment:
+  NODE_ENV: development
